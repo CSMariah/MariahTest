@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var NameTextField: UITextField!
-    
+    @IBOutlet weak var TextView: UITextView!
     
 let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
 
@@ -78,11 +78,12 @@ let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
                         else {
                             var userId = authData.uid
                             let newUser = ["provider": authData.provider, "email": authData.providerData["email"] as? NSString as? String,
-                            "name": "" as? String]
+                            "name": "" as? String, "about": "" as? String]
                           
                             
                             self.ref.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser)
                             self.ref.childByAppendingPath("users/\(authData.uid)/name").setValue(self.NameTextField.text)
+                            self.ref.childByAppendingPath("users/\(authData.uid)/about").setValue(self.TextView.text)
                             
                             self.performSegueWithIdentifier("SignIn", sender: self)
                         

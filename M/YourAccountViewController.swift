@@ -16,7 +16,7 @@ class YourAccountViewController: UIViewController {
     @IBOutlet weak var EmailLabel: UILabel!
     @IBOutlet weak var PasswordLabel: UILabel!
     @IBOutlet weak var NameLabel: UILabel!
-    
+    @IBOutlet weak var TextViewLabel: UITextView!
     
     
     
@@ -52,6 +52,14 @@ class YourAccountViewController: UIViewController {
                 print(error.description)
         })
         
+        
+        ref.observeEventType(.Value, withBlock: { snapshot in
+            let t = snapshot.value.objectForKey("about") as? String
+            self.TextViewLabel.text = t
+            print(self.TextViewLabel.text)
+            }, withCancelBlock: { error in
+                print(error.description)
+        })
 
     }
     
