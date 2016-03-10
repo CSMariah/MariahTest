@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42C9F71D1C9016E400B6D725 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9F71C1C9016E400B6D725 /* EditViewController.swift */; };
 		42D9E6D51C7C8F360006D140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6D41C7C8F360006D140 /* AppDelegate.swift */; };
 		42D9E6D71C7C8F360006D140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6D61C7C8F360006D140 /* ViewController.swift */; };
 		42D9E6DA1C7C8F360006D140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D9E6D81C7C8F360006D140 /* Main.storyboard */; };
@@ -14,6 +15,13 @@
 		42D9E6DF1C7C8F360006D140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D9E6DD1C7C8F360006D140 /* LaunchScreen.storyboard */; };
 		42D9E6EA1C7C8F360006D140 /* MTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6E91C7C8F360006D140 /* MTests.swift */; };
 		42D9E6F51C7C8F360006D140 /* MUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6F41C7C8F360006D140 /* MUITests.swift */; };
+		42D9E7051C7C93260006D140 /* YourAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E7041C7C93260006D140 /* YourAccountViewController.swift */; };
+		42D9E7071C7C933F0006D140 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E7061C7C933F0006D140 /* Firebase.framework */; };
+		42D9E7091C7C934C0006D140 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E7081C7C934C0006D140 /* Security.framework */; };
+		42D9E70B1C7C935D0006D140 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E70A1C7C935D0006D140 /* SystemConfiguration.framework */; };
+		42D9E70D1C7C936B0006D140 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E70C1C7C936B0006D140 /* CFNetwork.framework */; };
+		42D9E70F1C7C93710006D140 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E70E1C7C93710006D140 /* libc++.tbd */; };
+		42D9E7111C7C93780006D140 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 42D9E7101C7C93780006D140 /* libicucore.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42C9F71C1C9016E400B6D725 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		42D9E6D11C7C8F360006D140 /* M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D9E6D41C7C8F360006D140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D9E6D61C7C8F360006D140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,13 @@
 		42D9E6F01C7C8F360006D140 /* MUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D9E6F41C7C8F360006D140 /* MUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUITests.swift; sourceTree = "<group>"; };
 		42D9E6F61C7C8F360006D140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D9E7041C7C93260006D140 /* YourAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourAccountViewController.swift; sourceTree = "<group>"; };
+		42D9E7061C7C933F0006D140 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		42D9E7081C7C934C0006D140 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		42D9E70A1C7C935D0006D140 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		42D9E70C1C7C936B0006D140 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		42D9E70E1C7C93710006D140 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		42D9E7101C7C93780006D140 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D9E7111C7C93780006D140 /* libicucore.tbd in Frameworks */,
+				42D9E70F1C7C93710006D140 /* libc++.tbd in Frameworks */,
+				42D9E70D1C7C936B0006D140 /* CFNetwork.framework in Frameworks */,
+				42D9E70B1C7C935D0006D140 /* SystemConfiguration.framework in Frameworks */,
+				42D9E7091C7C934C0006D140 /* Security.framework in Frameworks */,
+				42D9E7071C7C933F0006D140 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +99,11 @@
 		42D9E6C81C7C8F350006D140 = {
 			isa = PBXGroup;
 			children = (
+				42D9E7101C7C93780006D140 /* libicucore.tbd */,
+				42D9E70E1C7C93710006D140 /* libc++.tbd */,
+				42D9E70C1C7C936B0006D140 /* CFNetwork.framework */,
+				42D9E70A1C7C935D0006D140 /* SystemConfiguration.framework */,
+				42D9E7081C7C934C0006D140 /* Security.framework */,
 				42D9E6D31C7C8F360006D140 /* M */,
 				42D9E6E81C7C8F360006D140 /* MTests */,
 				42D9E6F31C7C8F360006D140 /* MUITests */,
@@ -99,10 +126,13 @@
 			children = (
 				42D9E6D41C7C8F360006D140 /* AppDelegate.swift */,
 				42D9E6D61C7C8F360006D140 /* ViewController.swift */,
+				42D9E7041C7C93260006D140 /* YourAccountViewController.swift */,
+				42C9F71C1C9016E400B6D725 /* EditViewController.swift */,
 				42D9E6D81C7C8F360006D140 /* Main.storyboard */,
 				42D9E6DB1C7C8F360006D140 /* Assets.xcassets */,
 				42D9E6DD1C7C8F360006D140 /* LaunchScreen.storyboard */,
 				42D9E6E01C7C8F360006D140 /* Info.plist */,
+				42D9E7061C7C933F0006D140 /* Firebase.framework */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42C9F71D1C9016E400B6D725 /* EditViewController.swift in Sources */,
 				42D9E6D71C7C8F360006D140 /* ViewController.swift in Sources */,
+				42D9E7051C7C93260006D140 /* YourAccountViewController.swift in Sources */,
 				42D9E6D51C7C8F360006D140 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +429,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/M",
+				);
 				INFOPLIST_FILE = M/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.com.M;
@@ -408,6 +444,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/M",
+				);
 				INFOPLIST_FILE = M/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sa.com.M;
@@ -482,6 +522,7 @@
 				42D9E6FB1C7C8F360006D140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D9E6FC1C7C8F360006D140 /* Build configuration list for PBXNativeTarget "MTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +531,7 @@
 				42D9E6FE1C7C8F360006D140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42D9E6FF1C7C8F360006D140 /* Build configuration list for PBXNativeTarget "MUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +540,7 @@
 				42D9E7011C7C8F360006D140 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
