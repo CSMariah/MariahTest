@@ -13,6 +13,7 @@ import Firebase
 class ViewController: UIViewController {
 
     
+    
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var NameTextField: UITextField!
