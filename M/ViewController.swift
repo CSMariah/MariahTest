@@ -65,10 +65,10 @@ let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
     @IBAction func SignUp(sender: AnyObject) {
         if EmailTextField.text == "" || PasswordTextField.text == ""  {print("make sure to enter in each textField")}
         else {
-            ref.createUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (ErrorType) -> Void in
-                if ErrorType != nil {
-                    var myError = ErrorType as NSError
-                    print(myError)} else {
+            ref.createUser(EmailTextField.text, password: PasswordTextField.text, withCompletionBlock: { (error) -> Void in
+                if let error = error { //error happened
+                    print(error.localizedDescription) //error with description off the error
+                } else {
                     print("Sucess Sign Up")
                     
                     self.ref.authUser(self.EmailTextField.text, password: self.PasswordTextField.text, withCompletionBlock: { (ErrorType, authData) -> Void in
@@ -76,9 +76,7 @@ let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
                             print(ErrorType)
                             print("There is an error with given information")}
                         else {
-                            var userId = authData.uid
                             let newUser = [
-                                
                                 "provider": authData.provider,
                                 "email": authData.providerData["email"] as? NSString as? String,
                                 "name": self.NameTextField.text ,
