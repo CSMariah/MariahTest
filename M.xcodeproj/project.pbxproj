@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42C9F71D1C9016E400B6D725 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C9F71C1C9016E400B6D725 /* EditViewController.swift */; };
+		42CC54431C91C95200B920DB /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CC54421C91C95200B920DB /* ResetPasswordViewController.swift */; };
 		42D9E6D51C7C8F360006D140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6D41C7C8F360006D140 /* AppDelegate.swift */; };
 		42D9E6D71C7C8F360006D140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D9E6D61C7C8F360006D140 /* ViewController.swift */; };
 		42D9E6DA1C7C8F360006D140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D9E6D81C7C8F360006D140 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		42C9F71C1C9016E400B6D725 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		42CC54421C91C95200B920DB /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		42D9E6D11C7C8F360006D140 /* M.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D9E6D41C7C8F360006D140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D9E6D61C7C8F360006D140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				42D9E6D61C7C8F360006D140 /* ViewController.swift */,
 				42D9E7041C7C93260006D140 /* YourAccountViewController.swift */,
 				42C9F71C1C9016E400B6D725 /* EditViewController.swift */,
+				42CC54421C91C95200B920DB /* ResetPasswordViewController.swift */,
 				42D9E6D81C7C8F360006D140 /* Main.storyboard */,
 				42D9E6DB1C7C8F360006D140 /* Assets.xcassets */,
 				42D9E6DD1C7C8F360006D140 /* LaunchScreen.storyboard */,
@@ -288,6 +291,7 @@
 			files = (
 				42C9F71D1C9016E400B6D725 /* EditViewController.swift in Sources */,
 				42D9E6D71C7C8F360006D140 /* ViewController.swift in Sources */,
+				42CC54431C91C95200B920DB /* ResetPasswordViewController.swift in Sources */,
 				42D9E7051C7C93260006D140 /* YourAccountViewController.swift in Sources */,
 				42D9E6D51C7C8F360006D140 /* AppDelegate.swift in Sources */,
 			);

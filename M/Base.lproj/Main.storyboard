@@ -99,12 +99,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1335" y="-683"/>
+            <point key="canvasLocation" x="1443" y="-709"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="rMP-QZ-Dnq">
             <objects>
-                <viewController title="Forgot Password" id="Efx-Lc-bWc" sceneMemberID="viewController">
+                <viewController title="Forgot Password" id="Efx-Lc-bWc" customClass="ResetPasswordViewController" customModule="M" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xjf-iC-738"/>
                         <viewControllerLayoutGuide type="bottom" id="yRq-xd-EWj"/>
@@ -112,13 +112,37 @@
                     <view key="view" contentMode="scaleToFill" id="EZq-5B-rYJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWT-6v-MFw">
+                                <rect key="frame" x="106" y="185" width="109" height="30"/>
+                                <state key="normal" title="Reset Password"/>
+                                <connections>
+                                    <action selector="ResetPassword:" destination="Efx-Lc-bWc" eventType="touchUpInside" id="I9t-Rg-1vf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reset Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iyv-BA-nhu">
+                                <rect key="frame" x="95" y="28" width="131" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t92-gS-ZmL">
+                                <rect key="frame" x="20" y="125" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="t92-gS-ZmL" id="qRl-T7-VCN"/>
+                        <segue destination="BYZ-38-t0r" kind="modal" identifier="ResetPassword" id="3U2-D2-lzS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75E-MU-pSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1440" y="-8"/>
+            <point key="canvasLocation" x="1690" y="39"/>
         </scene>
         <!--Your Account-->
         <scene sceneID="9ZO-F3-aJz">
@@ -209,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Uc-qC-m6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-683"/>
+            <point key="canvasLocation" x="1860" y="-709"/>
         </scene>
         <!--Edit-->
         <scene sceneID="wat-wA-Em5">
@@ -318,7 +342,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="K0a-db-U5V"/>
-        <segue reference="mle-XG-C2U"/>
+        <segue reference="3U2-D2-lzS"/>
+        <segue reference="NBj-X1-IdK"/>
     </inferredMetricsTieBreakers>
 </document>
