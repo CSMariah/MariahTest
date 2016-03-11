@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1443" y="-709"/>
+            <point key="canvasLocation" x="1439" y="-667"/>
         </scene>
         <!--Forgot Password-->
         <scene sceneID="rMP-QZ-Dnq">
@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="75E-MU-pSP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="39"/>
+            <point key="canvasLocation" x="1342" y="99"/>
         </scene>
         <!--Your Account-->
         <scene sceneID="9ZO-F3-aJz">
@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Uc-qC-m6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1860" y="-709"/>
+            <point key="canvasLocation" x="2023" y="-678"/>
         </scene>
         <!--Edit-->
         <scene sceneID="wat-wA-Em5">
@@ -303,8 +303,7 @@
                                 <rect key="frame" x="167" y="455" width="37" height="30"/>
                                 <state key="normal" title="Done"/>
                                 <connections>
-                                    <action selector="Done:" destination="Sgo-oE-N0Y" eventType="touchUpInside" id="gm7-cD-hcn"/>
-                                    <segue destination="Byq-fA-sJ1" kind="modal" identifier="Done" id="mle-XG-C2U"/>
+                                    <action selector="Done:" destination="Sgo-oE-N0Y" eventType="touchUpInside" id="GpI-cq-XJd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -320,7 +319,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Le2-DB-tkE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="-709"/>
+            <point key="canvasLocation" x="2457" y="-704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wqf-q3-ZPV">
@@ -343,6 +342,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="3U2-D2-lzS"/>
-        <segue reference="NBj-X1-IdK"/>
     </inferredMetricsTieBreakers>
 </document>
