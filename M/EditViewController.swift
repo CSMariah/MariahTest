@@ -16,14 +16,11 @@ class EditViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var TextView: UITextView!
-    var ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
+    let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com/users/\(self.ref.authData.uid)")
-       
-        ref.observeEventType(.Value, withBlock: { snapshot in
+        ref.childByAppendingPath("users").childByAppendingPath(self.ref.authData.uid).observeEventType(.Value, withBlock: { snapshot in
             let e = snapshot.value.objectForKey("email") as? String
             self.EmailTextField.text = e
             print(self.EmailTextField.text)
@@ -58,9 +55,7 @@ class EditViewController: UIViewController {
 
     @IBAction func Done(sender: AnyObject) {
         
-         var ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com/users/\(self.ref.authData.uid)")
-
-       ref.changeEmailForUser("email", password: "provider", toNewEmail: EmailTextField.text) { (ErrorType) -> Void in
+       ref.childByAppendingPath("users").childByAppendingPath(self.ref.authData.uid).changeEmailForUser("email", password: "provider", toNewEmail: EmailTextField.text) { (ErrorType) -> Void in
         
         if ErrorType != nil {
         print("There was an error processing the request")
@@ -71,13 +66,8 @@ class EditViewController: UIViewController {
         }
         
         
-        ref.childByAppendingPath("users/\(self.ref.authData.uid)").updateChildValues(["name":NameTextField.text!])
-        ref.childByAppendingPath("users/\(self.ref.authData.uid)").updateChildValues(["about":TextView.text!])
-
+        ref.childByAppendingPath("users").childByAppendingPath(self.ref.authData.uid).updateChildValues(["name":NameTextField.text!,"about":TextView.text!])
         
-
-   
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-
-
 }
