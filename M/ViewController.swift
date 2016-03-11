@@ -77,13 +77,17 @@ let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
                             print("There is an error with given information")}
                         else {
                             var userId = authData.uid
-                            let newUser = ["provider": authData.provider, "email": authData.providerData["email"] as? NSString as? String,
-                            "name": "" as? String, "about": "" as? String]
+                            let newUser = [
+                                
+                                "provider": authData.provider,
+                                "email": authData.providerData["email"] as? NSString as? String,
+                                "name": self.NameTextField.text ,
+                                "about": self.TextView.text
+                            ]
                           
                             
                             self.ref.childByAppendingPath("users").childByAppendingPath(authData.uid).setValue(newUser)
-                            self.ref.childByAppendingPath("users/\(authData.uid)/name").setValue(self.NameTextField.text)
-                            self.ref.childByAppendingPath("users/\(authData.uid)/about").setValue(self.TextView.text)
+                           
                             
                             self.performSegueWithIdentifier("SignIn", sender: self)
                         
