@@ -16,7 +16,7 @@ class EditViewController: UIViewController {
     @IBOutlet weak var PasswordTextField: UITextField!
     @IBOutlet weak var NameTextField: UITextField!
     @IBOutlet weak var TextView: UITextView!
-    let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
+    let ref = Firebase(url:"https://sns-imessage.firebaseio.com/")
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -12,7 +12,7 @@ class ResetPasswordViewController: UIViewController {
 
     @IBOutlet weak var EmailTextField: UITextField!
     
-     var ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com")
+     let ref = Firebase(url:"https://sns-imessage.firebaseio.com/")
     
     override func viewDidLoad() {
         super.viewDidLoad()
