@@ -28,35 +28,43 @@ class YourAccountViewController: UIViewController {
     
         let ref = Firebase(url:"https://mariahsamikhayat.firebaseio.com/users/\(self.ref.authData.uid)")
         ref.observeEventType(.Value, withBlock: { snapshot in
-            let m = snapshot.value.objectForKey("email") as? String
-            self.EmailLabel.text = m
-            print(self.EmailLabel.text)
+            if let value = snapshot.value as? NSDictionary{
+                let m = value.objectForKey("email") as? String
+                self.EmailLabel.text = m
+                print(self.EmailLabel.text)
+            }
             }, withCancelBlock: { error in
                 print(error.description)
         })
         
         
         ref.observeEventType(.Value, withBlock: { snapshot in
-            let r = snapshot.value.objectForKey("name") as? String
-            self.NameLabel.text = r
+            if let value = snapshot.value as? NSDictionary{
+                let r = value.objectForKey("name") as? String
+                self.NameLabel.text = r
+            }
             }, withCancelBlock: { error in
                 print(self.NameLabel.text)
                 print(error.description)
         })
         
         ref.observeEventType(.Value, withBlock: { snapshot in
-            let t = snapshot.value.objectForKey("provider") as? String
-            self.PasswordLabel.text = t
-            print(self.PasswordLabel.text)
+            if let value = snapshot.value as? NSDictionary{
+                let t = value.objectForKey("provider") as? String
+                self.PasswordLabel.text = t
+                print(self.PasswordLabel.text)
+            }
             }, withCancelBlock: { error in
                 print(error.description)
         })
         
         
         ref.observeEventType(.Value, withBlock: { snapshot in
-            let t = snapshot.value.objectForKey("about") as? String
-            self.TextViewLabel.text = t
-            print(self.TextViewLabel.text)
+            if let value = snapshot.value as? NSDictionary{
+                let t = value.objectForKey("about") as? String
+                self.TextViewLabel.text = t
+                print(self.TextViewLabel.text)
+            }
             }, withCancelBlock: { error in
                 print(error.description)
         })
